@@ -35,7 +35,7 @@ exports.ExposeStore = (moduleRaidStr) => {
   window.Store.OpaqueData = window.mR.findModule(
     (module) => module.default && module.default.createFromData
   )[0].default
-  window.Store.QueryExist = window.mR.findModule('queryExists')[0].queryExists
+  // window.Store.QueryExist = window.mR.findModule('queryExists')[0].queryExists
   window.Store.QueryProduct = window.mR.findModule('queryProduct')[0]
   window.Store.QueryOrder = window.mR.findModule('queryOrder')[0]
   window.Store.SendClear = window.mR.findModule('sendClear')[0]
